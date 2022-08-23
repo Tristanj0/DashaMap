@@ -8,11 +8,11 @@ package com.github.zipcodewilmington;
 public interface HashMapX {
     // fundamentals
     void set(String key, String value);
-    String delete(String key);
-    String get(String key);
+    void delete(String key);
+    SinglyLinkedList get(String key);
     boolean isEmpty();
     long size();
 
     // testing access
-    boolean bucketSize(String key); // used for tests
+    int bucketSize(String key); // used for tests
 }
